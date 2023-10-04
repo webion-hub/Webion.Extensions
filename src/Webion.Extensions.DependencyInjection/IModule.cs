@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Cecir.Application.Extensions;
+namespace Webion.Application.Extensions;
 
 
 public interface IModule
