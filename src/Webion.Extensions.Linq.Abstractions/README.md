@@ -1,0 +1,1 @@
+Contains the results used by the linq extension methods.

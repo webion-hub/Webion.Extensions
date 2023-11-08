@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <Version>1.0.0</Version>
+        <IsPackable>true</IsPackable>
+        <OutputType>Library</OutputType>
+
+        <Title>Webion.Extensions.EntityFrameworkCore</Title>
+        <Authors>Webion SRL</Authors>
+        <Description>Extensions for Entity Framework queries.</Description>
+        <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/webion-hub/Webion.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Webion.Extensions.Linq.Abstractions\Webion.Extensions.Linq.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    </ItemGroup>
+
+</Project>
