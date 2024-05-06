@@ -1,0 +1,1 @@
+Contains various extension methods used for operations on `IEnumerables`, `IQueryables` and `ICollections`.

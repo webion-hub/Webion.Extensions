@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.AspNetCore", "src\Webion.AspNetCore\Webion.AspNetCore.csproj", "{207A4AFB-F58E-40D4-AF9B-62A05D6413C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.DependencyInjection", "src\Webion.Extensions.DependencyInjection\Webion.Extensions.DependencyInjection.csproj", "{612868D4-4234-41F4-B3C9-2E0D153C27BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Linq", "src\Webion.Extensions.Linq\Webion.Extensions.Linq.csproj", "{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.EntityFrameworkCore", "src\Webion.Extensions.EntityFrameworkCore\Webion.Extensions.EntityFrameworkCore.csproj", "{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Linq.Abstractions", "src\Webion.Extensions.Linq.Abstractions\Webion.Extensions.Linq.Abstractions.csproj", "{BE717398-41AC-4CC7-9855-5129CAC22A1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{612868D4-4234-41F4-B3C9-2E0D153C27BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612868D4-4234-41F4-B3C9-2E0D153C27BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612868D4-4234-41F4-B3C9-2E0D153C27BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612868D4-4234-41F4-B3C9-2E0D153C27BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE717398-41AC-4CC7-9855-5129CAC22A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE717398-41AC-4CC7-9855-5129CAC22A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE717398-41AC-4CC7-9855-5129CAC22A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE717398-41AC-4CC7-9855-5129CAC22A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{612868D4-4234-41F4-B3C9-2E0D153C27BD} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{6BB4FCFF-ECD5-4AC0-ABB0-0A9E7191B118} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{ACA88A63-51C5-4763-8CA5-4EA0FCF2DD88} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{BE717398-41AC-4CC7-9855-5129CAC22A1B} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+	EndGlobalSection
+EndGlobal
