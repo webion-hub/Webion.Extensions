@@ -50,6 +50,8 @@ public static class CollectionExtensions
         bool skipUpdate = false,
         bool skipDelete = false
     )
+    where T1: class
+    where T2: class 
     {
         var newItems = replacement.ToList();
         var deleted = new List<T1>();
