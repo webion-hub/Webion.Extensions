@@ -4,7 +4,7 @@ namespace Webion.Extensions.DependencyInjection;
 
 public static class ModuleExtension
 {
-    public static void AddModulesFromAssembly<T>(this IServiceCollection services)
+    public static void AddModulesFromAssemblyContaining<T>(this IServiceCollection services)
     {
         var assembly = typeof(T).Assembly;
         var moduleTypes = assembly
@@ -19,5 +19,11 @@ public static class ModuleExtension
 
             module.Configure(services);
         }
+    }
+
+    public static void AddModule<T>(this IServiceCollection services)
+        where T: IModule, new()
+    {
+        new T().Configure(services);
     }
 }
