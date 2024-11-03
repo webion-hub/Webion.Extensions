@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Library</OutputType>
+        <IsPackable>true</IsPackable>
+
+        <Version>1.0.0</Version>
+        <Title>Webion.Extensions.Quartz.DependencyInjection</Title>
+        <Authors>Webion SRL</Authors>
+        <Description>Adds the IJobConfig interface, that can be used to configure quartz jobs separately.</Description>
+        <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/webion-hub/Webion.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <LangVersion>12</LangVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.13.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
