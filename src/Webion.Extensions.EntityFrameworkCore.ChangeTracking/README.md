@@ -56,7 +56,7 @@ public sealed class MyDbContext : DbContext, IChangeTrackingDbContext<ChangeTrac
     // the user that makes the queries
     public ClaimsPrincipal? Principal { get; set; }
     
-    public EtePgsqlDbContext(DbContextOptions<EtePgsqlDbContext> options, IEnumerable<IInterceptor> interceptors) : base(options)
+    public MyDbContext(DbContextOptions<MyDbContext> options, IEnumerable<IInterceptor> interceptors) : base(options)
     {
         _interceptors = interceptors;
     }
@@ -97,7 +97,7 @@ public sealed class ChangeTrackingMiddleware
         _next = next;
     }
     
-    public async Task InvokeAsync(HttpContext httpContext, EtePgsqlDbContext dbContext)
+    public async Task InvokeAsync(HttpContext httpContext, MyDbContext dbContext)
     {
         dbContext.Principal = httpContext.User;
         await _next(httpContext);
