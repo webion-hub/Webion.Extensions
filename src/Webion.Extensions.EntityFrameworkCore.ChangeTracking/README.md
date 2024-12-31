@@ -126,7 +126,7 @@ public sealed class ChangeTrackingInfoDboDecorator : IChangeTrackingInfoDecorato
 Register the services.
 ```csharp
 builder.Services.AddTransient<IChangeTrackingInfoDecorator<ChangeTrackingInfoDbo>, ChangeTrackingInfoDboDecorator>();
-builder.Services.AddSaveChangesTrackingInterceptors<MyDbContext, ChangeTrackingInfoDbo>();
+builder.Services.AddChangeTracking<MyDbContext, ChangeTrackingInfoDbo>();
 ```
 
 Once the services are registered, each Delete, Insert and Update operation will be tracked automatically, 

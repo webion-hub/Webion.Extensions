@@ -8,7 +8,7 @@ namespace Webion.Extensions.EntityFrameworkCore.ChangeTracking;
 /// Represents the context for change tracking operations within the DbContext.
 /// Used to capture and store metadata about the changes being tracked in the Entity Framework context.
 /// </summary>
-internal sealed class ChangeTrackingContext
+public sealed class ChangeTrackingContext
 {
     public required DbContext? DbContext { get; init; }
     public required IList<ChangeTrackingEntry> Entries { get; init; }
@@ -16,7 +16,7 @@ internal sealed class ChangeTrackingContext
     public required string EventIdCode { get; init; }
 }
 
-internal sealed record ChangeTrackingEntry(
+public sealed record ChangeTrackingEntry(
     EntityEntry Original,
     EntityState State
 );
