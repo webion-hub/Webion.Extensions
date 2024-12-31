@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.AspNetCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Quartz.DependencyInjection", "src\Webion.Extensions.Quartz.DependencyInjection\Webion.Extensions.Quartz.DependencyInjection.csproj", "{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.EntityFrameworkCore.ChangeTracking", "src\Webion.Extensions.EntityFrameworkCore.ChangeTracking\Webion.Extensions.EntityFrameworkCore.ChangeTracking.csproj", "{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
@@ -74,5 +80,6 @@ Global
 		{CA2BFC91-C520-49E4-9CC9-777D4D315787} = {6615B373-5573-4C8D-A7A3-BB97EDAA561E}
 		{E32DF511-2489-4C72-8EB6-F4A26F7FF6C0} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 		{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 	EndGlobalSection
 EndGlobal
