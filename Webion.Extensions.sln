@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Quartz.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.EntityFrameworkCore.ChangeTracking", "src\Webion.Extensions.EntityFrameworkCore.ChangeTracking\Webion.Extensions.EntityFrameworkCore.ChangeTracking.csproj", "{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clickup", "clickup", "{568A3014-0777-4FFC-8E33-B0A4C968F4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.ClickUp.Api.v2", "src\clickup\Webion.ClickUp.Api.v2\Webion.ClickUp.Api.v2.csproj", "{54BFEF7C-36F5-4DB7-A850-772EB303A543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.AspNetCore.Authentication.ClickUp", "src\clickup\Webion.Extensions.AspNetCore.Authentication.ClickUp\Webion.Extensions.AspNetCore.Authentication.ClickUp.csproj", "{A67B9911-48F8-42BD-A84A-5065DE3432A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +76,14 @@ Global
 		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54BFEF7C-36F5-4DB7-A850-772EB303A543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54BFEF7C-36F5-4DB7-A850-772EB303A543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54BFEF7C-36F5-4DB7-A850-772EB303A543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54BFEF7C-36F5-4DB7-A850-772EB303A543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67B9911-48F8-42BD-A84A-5065DE3432A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67B9911-48F8-42BD-A84A-5065DE3432A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67B9911-48F8-42BD-A84A-5065DE3432A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67B9911-48F8-42BD-A84A-5065DE3432A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
@@ -81,5 +95,8 @@ Global
 		{E32DF511-2489-4C72-8EB6-F4A26F7FF6C0} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 		{37FB9A1D-8585-42A6-AF8A-8DF8CA159B66} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 		{D3FCEB5D-B626-40A5-BDEC-D7D065B93EBC} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{568A3014-0777-4FFC-8E33-B0A4C968F4C5} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
+		{54BFEF7C-36F5-4DB7-A850-772EB303A543} = {568A3014-0777-4FFC-8E33-B0A4C968F4C5}
+		{A67B9911-48F8-42BD-A84A-5065DE3432A1} = {568A3014-0777-4FFC-8E33-B0A4C968F4C5}
 	EndGlobalSection
 EndGlobal
