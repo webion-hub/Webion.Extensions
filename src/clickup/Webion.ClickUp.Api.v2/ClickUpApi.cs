@@ -15,6 +15,8 @@ internal sealed class ClickUpApi : IClickUpApi
 {
     private readonly HttpClient _client;
 
+    public HttpClient Client => _client;
+    
     public IClickUpTeamApi Teams => RestService.For<IClickUpTeamApi>(_client, Settings);
     public IClickUpOAuthApi OAuth => RestService.For<IClickUpOAuthApi>(_client, Settings);
     public IClickUpUsersApi Users => RestService.For<IClickUpUsersApi>(_client, Settings);

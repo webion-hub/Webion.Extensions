@@ -35,7 +35,11 @@ public sealed class GetTeamTimeEntriesResponse
         public TimeSpan? Duration { get; init; }
         
         public string? Description { get; init; }
-        public string[] Tags { get; init; } = [];
+        
+        /// <summary>
+        /// An array of tags of type <c>string[]</c>
+        /// </summary>
+        public JsonElement? Tags { get; init; }
         public string? Source { get; init; }
         public string? At { get; init; }
         

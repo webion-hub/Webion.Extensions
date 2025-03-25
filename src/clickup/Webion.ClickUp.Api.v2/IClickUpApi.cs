@@ -10,6 +10,11 @@ namespace Webion.ClickUp.Api.v2;
 
 public interface IClickUpApi
 {
+    /// <summary>
+    /// The http client used for the underlying calls.
+    /// </summary>
+    public HttpClient Client { get; }
+    
     public IClickUpTeamApi Teams { get; }
     public IClickUpOAuthApi OAuth { get; }
     public IClickUpUsersApi Users { get; }
