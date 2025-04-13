@@ -10,8 +10,16 @@ public static class OptionsDescriptor
         
         void AddProperties(Type currentType, string? parentPrefix)
         {
-            var instance = Activator.CreateInstance(currentType);
-            
+            object? instance = null;
+            try
+            {
+                instance = Activator.CreateInstance(currentType);
+            }
+            catch
+            {
+                // ignored
+            }
+
             foreach (var property in currentType.GetProperties())
             {
                 var key = string.IsNullOrEmpty(parentPrefix)
