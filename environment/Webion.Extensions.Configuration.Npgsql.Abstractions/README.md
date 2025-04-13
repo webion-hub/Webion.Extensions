@@ -1,0 +1,1 @@
+Provides the `AppSettingBaseDbo` abstraction.
