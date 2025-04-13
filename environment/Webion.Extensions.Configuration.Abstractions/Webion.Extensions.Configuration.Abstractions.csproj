@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <Version>1.0.0</Version>
+        
+        <IsPackable>true</IsPackable>
+        <OutputType>Library</OutputType>
+        <Title>Webion.Extensions.Configuration.Abstractions</Title>
+        <Authors>Webion SRL</Authors>
+        <Description>Configuration extensions</Description>
+        <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/webion-hub/Webion.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>

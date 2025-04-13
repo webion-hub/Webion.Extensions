@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Configuration.Npgsql.Abstractions", "environment\Webion.Extensions.Configuration.Npgsql.Abstractions\Webion.Extensions.Configuration.Npgsql.Abstractions.csproj", "{FDE76C8E-734D-4095-B9A4-32D24A92E148}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Configuration.Abstractions", "environment\Webion.Extensions.Configuration.Abstractions\Webion.Extensions.Configuration.Abstractions.csproj", "{42600F02-5DAD-4339-9AFB-FDF38A6663E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{FDE76C8E-734D-4095-B9A4-32D24A92E148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE76C8E-734D-4095-B9A4-32D24A92E148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE76C8E-734D-4095-B9A4-32D24A92E148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42600F02-5DAD-4339-9AFB-FDF38A6663E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42600F02-5DAD-4339-9AFB-FDF38A6663E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42600F02-5DAD-4339-9AFB-FDF38A6663E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42600F02-5DAD-4339-9AFB-FDF38A6663E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{207A4AFB-F58E-40D4-AF9B-62A05D6413C4} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
@@ -122,5 +128,6 @@ Global
 		{A177711C-EAD3-4F02-97D9-BB038100C6F4} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 		{44C1F85B-F112-4E75-9D55-B91A2ED69EFC} = {A177711C-EAD3-4F02-97D9-BB038100C6F4}
 		{FDE76C8E-734D-4095-B9A4-32D24A92E148} = {A177711C-EAD3-4F02-97D9-BB038100C6F4}
+		{42600F02-5DAD-4339-9AFB-FDF38A6663E4} = {A177711C-EAD3-4F02-97D9-BB038100C6F4}
 	EndGlobalSection
 EndGlobal
