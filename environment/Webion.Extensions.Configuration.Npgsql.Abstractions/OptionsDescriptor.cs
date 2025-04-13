@@ -2,7 +2,7 @@ namespace Webion.Extensions.Configuration.Npgsql.Abstractions;
 
 public static class OptionsDescriptor
 {
-    public static Dictionary<string, string?> Describe<T>()
+    public static Dictionary<string, string?> Describe<T>(string? prefix = null)
         where T : class, new()
     {
         var result = new Dictionary<string, string?>();
@@ -29,7 +29,7 @@ public static class OptionsDescriptor
             }
         }
     
-        AddProperties(type, null);
+        AddProperties(type, prefix);
     
         return result;
     }
