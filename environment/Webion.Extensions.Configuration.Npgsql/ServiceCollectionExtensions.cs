@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Configuration;
-using Npgsql;
 
 namespace Webion.Extensions.Configuration.Npgsql;
 

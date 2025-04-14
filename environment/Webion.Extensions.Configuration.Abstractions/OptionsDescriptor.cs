@@ -15,7 +15,7 @@ public static class OptionsDescriptor
     public static Dictionary<string, string?> Describe<T>(string? prefix = null)
         where T : class, new()
     {
-        return Describe(typeof(T));
+        return Describe(typeof(T), prefix);
     }
 
 
@@ -28,7 +28,7 @@ public static class OptionsDescriptor
     /// <returns>
     /// A dictionary where each key represents a property's name, potentially prefixed with its section,
     /// and each value contains the property's value or null if unavailable.
-    /// </returns
+    /// </returns>
     public static Dictionary<string, string?> Describe(Type type, string? prefix = null)
     {
         var result = new Dictionary<string, string?>();
@@ -38,29 +38,33 @@ public static class OptionsDescriptor
 
         void AddProperties(Type currentType, string? parentPrefix)
         {
-            object? instance = null;
-            try
-            {
-                instance = Activator.CreateInstance(currentType);
-            }
-            catch
-            {
-                // ignored
-            }
-
             foreach (var property in currentType.GetProperties())
             {
                 var key = string.IsNullOrEmpty(parentPrefix)
                     ? property.Name
                     : $"{parentPrefix}:{property.Name}";
-    
-                if (property.PropertyType.IsClass && property.PropertyType != typeof(string))
+
+                if (property.PropertyType.IsClass && 
+                    property.PropertyType != typeof(string) &&
+                    property.PropertyType.GetInterfaces().All(x => x != typeof(ISpanFormattable)))
                 {
-                    AddProperties(property.PropertyType, key);
+                    AddProperties(property.PropertyType, key);   
                 }
                 else
                 {
-                    result[key] = property.GetValue(instance)?.ToString();
+                    object? instance = null;
+                    try
+                    {
+                        instance = Activator.CreateInstance(currentType);
+                    }
+                    catch
+                    {
+                        // ignored
+                    }
+                    
+                    result[key] = instance is not null
+                        ? property.GetValue(instance)?.ToString()
+                        : null;       
                 }
             }
         }
