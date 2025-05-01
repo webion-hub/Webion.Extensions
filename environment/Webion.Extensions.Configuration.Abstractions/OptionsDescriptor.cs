@@ -1,7 +1,24 @@
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Schema;
+
 namespace Webion.Extensions.Configuration.Abstractions;
 
 public static class OptionsDescriptor
 {
+    /// <summary>
+    /// Generates a JSON schema representation of the specified application settings type.
+    /// </summary>
+    /// <typeparam name="TAppsettings">The type representing application settings to generate the schema for.</typeparam>
+    /// <returns>
+    /// A string containing the JSON schema for the specified application settings type.
+    /// </returns>
+    public static string GetOptionsSchema<TAppsettings>()
+    {
+        var schema = JsonSerializerOptions.Default.GetJsonSchemaAsNode(typeof(TAppsettings));
+        return schema.ToString();
+    }
+    
     /// <summary>
     /// Generates a dictionary describing the properties of a specified class type,
     /// represented as key-value pairs, where keys include an optional prefix.
