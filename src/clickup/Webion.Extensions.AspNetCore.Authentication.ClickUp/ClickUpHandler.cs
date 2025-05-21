@@ -1,10 +1,10 @@
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
-using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.Extensions.Options;
+using Webion.Extensions.AspNetCore.Authentication.ClickUp.Model;
 
 namespace Webion.Extensions.AspNetCore.Authentication.ClickUp;
 
@@ -44,25 +44,5 @@ public sealed class ClickUpHandler : OAuthHandler<ClickUpOptions>
 
         if (response.User.Color is not null)
             yield return new Claim(ClickUpClaims.Color, response.User.Color);
-    }
-}
-
-internal sealed class GetUserResponse
-{
-    public UserDto User { get; set; } = null!;
-
-    internal sealed class UserDto
-    {
-        [JsonPropertyName("id")]
-        public long Id { get; init; }
-
-        [JsonPropertyName("username")]
-        public string UserName { get; init; } = null!;
-
-        [JsonPropertyName("color")]
-        public string? Color { get; init; }
-
-        [JsonPropertyName("profilePicture")]
-        public string? ProfilePicture { get; init; }
     }
 }
