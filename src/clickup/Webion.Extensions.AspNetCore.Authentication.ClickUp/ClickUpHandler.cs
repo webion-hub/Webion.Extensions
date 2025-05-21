@@ -35,7 +35,10 @@ public sealed class ClickUpHandler : OAuthHandler<ClickUpOptions>
     {
         yield return new Claim(ClaimTypes.NameIdentifier, response.User.Id.ToString());
         yield return new Claim(ClaimTypes.Name, response.User.UserName);
-
+        
+        if (response.User.Email is not null)
+            yield return new Claim(ClaimTypes.Email, response.User.Email);
+        
         if (tokens.AccessToken is not null)
             yield return new Claim(ClickUpClaims.AccessToken, tokens.AccessToken);
 
@@ -44,5 +47,8 @@ public sealed class ClickUpHandler : OAuthHandler<ClickUpOptions>
 
         if (response.User.Color is not null)
             yield return new Claim(ClickUpClaims.Color, response.User.Color);
+        
+        if (response.User.Initials is not null)
+            yield return new Claim(ClickUpClaims.Initials, response.User.Initials);
     }
 }
