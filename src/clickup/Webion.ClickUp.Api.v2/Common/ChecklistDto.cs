@@ -14,5 +14,5 @@ public sealed class ChecklistDto
     public required int Creator { get; init; }
     public required int Resolved { get; init; }
     public required int Unresolved { get; init; }
-    public required IEnumerable<string> Items { get; init; }
+    public required IEnumerable<object> Items { get; init; }
 }
