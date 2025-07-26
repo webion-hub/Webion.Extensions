@@ -4,6 +4,23 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        
+        <IsPackable>true</IsPackable>
+        <Authors>Webion</Authors>
+        <Description>
+            A .NET database migration framework that provides a structured approach to 
+            managing database schema changes and data migrations. 
+            This project is part of the Webion.Extensions ecosystem and works alongside the 
+            abstractions layer and specialized implementations (such as Typesense support).
+        </Description>
+        <Copyright>Webion Srl</Copyright>
+        <PackageProjectUrl>https://github.com/webion-hub/Webion.Extensions</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/webion-hub/Webion.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+
+        <Version>1.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,5 +30,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Webion.Db.Migrations.Abstractions\Webion.Db.Migrations.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 </Project>
