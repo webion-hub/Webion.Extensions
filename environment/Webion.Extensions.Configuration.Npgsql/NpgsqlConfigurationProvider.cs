@@ -21,7 +21,7 @@ internal sealed class NpgsqlConfigurationProvider : ConfigurationProvider
             $"""
              select key, value
              from {_source.SchemaName}.{_source.TableName}
-             where environment = @environment
+             where @environment = ANY(environments)
              """;
         
         var settings = conn.Query<AppSettingDbo>(query, new
