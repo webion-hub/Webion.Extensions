@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Webion.ClickUp.Api.V2</RootNamespace>
+        <RootNamespace>Webion.ClickUp.Api.v2</RootNamespace>
         <OutputType>Library</OutputType>
 
         <IsPackable>true</IsPackable>
