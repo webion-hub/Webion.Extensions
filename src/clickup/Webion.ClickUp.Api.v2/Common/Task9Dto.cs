@@ -5,52 +5,52 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class Task9Dto
 {
-    public required string Id { get; init; }
-    public required string CustomId { get; init; }
-    public required int CustomItemId { get; init; }
-    public required string Name { get; init; }
-    public required string TextContent { get; init; }
-    public required string Description { get; init; }
-    public required Status11Dto Status { get; init; }
+    public string Id { get; init; }
+    public string CustomId { get; init; }
+    public int CustomItemId { get; init; }
+    public string Name { get; init; }
+    public string TextContent { get; init; }
+    public string Description { get; init; }
+    public Status11Dto Status { get; init; }
     public string? OrderIndex { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset DateCreated { get; init; }
+    public DateTimeOffset DateCreated { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset DateUpdated { get; init; }
+    public DateTimeOffset DateUpdated { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset DateClosed { get; init; }
+    public DateTimeOffset DateClosed { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset DateDone { get; init; }
-    public required CreatorDto Creator { get; init; }
-    public required IEnumerable<User2Dto> Assignees { get; init; }
-    public required IEnumerable<User2Dto> Watchers { get; init; }
-    public required IEnumerable<ChecklistDto> Checklists { get; init; }
-    public required IEnumerable<TagDto> Tags { get; init; }
-    public required Task9Dto? Parent { get; init; }
-    public required Priority4Dto? Priority { get; init; }
+    public DateTimeOffset DateDone { get; init; }
+    public CreatorDto Creator { get; init; }
+    public IEnumerable<User2Dto> Assignees { get; init; }
+    public IEnumerable<User2Dto> Watchers { get; init; }
+    public IEnumerable<ChecklistDto> Checklists { get; init; }
+    public IEnumerable<TagDto> Tags { get; init; }
+    public Task9Dto? Parent { get; init; }
+    public Priority4Dto? Priority { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset? DueDate { get; init; }
+    public DateTimeOffset? DueDate { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset? StartDate { get; init; }
+    public DateTimeOffset? StartDate { get; init; }
     public object? Point { get; init; }
-    public required int? TimeEstimate { get; init; }
+    public int? TimeEstimate { get; init; }
     public int? TimeSpent { get; init; }
-    public required IEnumerable<object> CustomFields { get; init; }
-    public required IEnumerable<object> Dependencies { get; init; }
-    public required IEnumerable<object> LinkedTasks { get; init; }
-    public required IEnumerable<object> Locations { get; init; }
-    public required string TeamId { get; init; }
-    public required string Url { get; init; }
-    public required SharingDto Sharing { get; init; }
-    public required string PermissionLevel { get; init; }
-    public required ListDto List { get; init; }
-    public required ProjectDto Project { get; init; }
-    public required FolderDto Folder { get; init; }
-    public required SpaceDto Space { get; init; }
+    public IEnumerable<object> CustomFields { get; init; }
+    public IEnumerable<object> Dependencies { get; init; }
+    public IEnumerable<object> LinkedTasks { get; init; }
+    public IEnumerable<object> Locations { get; init; }
+    public string TeamId { get; init; }
+    public string Url { get; init; }
+    public SharingDto Sharing { get; init; }
+    public string PermissionLevel { get; init; }
+    public ListDto List { get; init; }
+    public ProjectDto Project { get; init; }
+    public FolderDto Folder { get; init; }
+    public SpaceDto Space { get; init; }
 }

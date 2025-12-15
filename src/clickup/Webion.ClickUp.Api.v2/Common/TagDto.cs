@@ -2,8 +2,8 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class TagDto
 {
-    public required string Name { get; init; }
-    public required string TagFg { get; init; }
-    public required string TagBg { get; init; }
-    public required int? Creator { get; init; }
+    public string Name { get; init; }
+    public string TagFg { get; init; }
+    public string TagBg { get; init; }
+    public int? Creator { get; init; }
 }

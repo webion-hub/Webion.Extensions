@@ -2,9 +2,9 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class SharingDto
 {
-    public required bool Public { get; init; }
-    public required bool? PublicShareExpiresOn { get; init; }
-    public required IEnumerable<string> PublicFields { get; init; }
-    public required object? Token { get; init; }
-    public required bool SeoOptimized { get; init; }
+    public bool Public { get; init; }
+    public bool? PublicShareExpiresOn { get; init; }
+    public IEnumerable<string> PublicFields { get; init; }
+    public object? Token { get; init; }
+    public bool SeoOptimized { get; init; }
 }

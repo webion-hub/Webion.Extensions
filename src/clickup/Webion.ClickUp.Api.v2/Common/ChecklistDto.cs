@@ -4,15 +4,15 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class ChecklistDto
 {
-    public required string Id { get; init; }
-    public required string TaskId { get; init; }
-    public required string Name { get; init; }
-    public required string DateCreated { get; init; }
+    public string Id { get; init; }
+    public string TaskId { get; init; }
+    public string Name { get; init; }
+    public string DateCreated { get; init; }
 
     [JsonPropertyName("orderindex")]
-    public required int OrderIndex { get; init; }
-    public required int Creator { get; init; }
-    public required int Resolved { get; init; }
-    public required int Unresolved { get; init; }
-    public required IEnumerable<object> Items { get; init; }
+    public int OrderIndex { get; init; }
+    public int Creator { get; init; }
+    public int Resolved { get; init; }
+    public int Unresolved { get; init; }
+    public IEnumerable<object> Items { get; init; }
 }

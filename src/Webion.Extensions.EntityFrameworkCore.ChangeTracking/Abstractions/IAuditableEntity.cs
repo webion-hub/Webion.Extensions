@@ -1,0 +1,3 @@
+namespace Webion.Extensions.EntityFrameworkCore.ChangeTracking.Abstractions;
+
+public interface IAuditableEntity;

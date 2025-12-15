@@ -21,6 +21,7 @@ internal sealed class SaveChangesTrackingInterceptor : ISaveChangesInterceptor
         var entries = e.Context?.ChangeTracker
             .Entries()
             .Where(x => x.Entity is not IChangeTrackingInfoDbo)
+            .Where(x => x.Entity is IAuditableEntity)
             .Select(x => new ChangeTrackingEntry(x, x.State))
             .ToList() ?? [];
         

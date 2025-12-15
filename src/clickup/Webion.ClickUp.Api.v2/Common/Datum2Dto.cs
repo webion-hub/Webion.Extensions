@@ -5,14 +5,14 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class Datum2Dto
 {
-    public required string Id { get; init; } = null!;
+    public string Id { get; init; } = null!;
     public Task4Dto? Task { get; init; }
-    public required string Wid { get; init; }
-    public required User2Dto User { get; init; } = null!;
+    public string Wid { get; init; }
+    public User2Dto User { get; init; } = null!;
     public bool Billable { get; init; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public required DateTimeOffset Start { get; init; }
+    public DateTimeOffset Start { get; init; }
     public string? Description { get; init; }
     public string[] Tags { get; init; } = [];
     public string? At { get; init; }

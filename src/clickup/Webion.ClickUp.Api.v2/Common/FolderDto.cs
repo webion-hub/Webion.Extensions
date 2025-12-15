@@ -2,8 +2,8 @@ namespace Webion.ClickUp.Api.v2.Common;
 
 public sealed class FolderDto
 {
-    public required string Id { get; init; }
-    public required string Name { get; init; }
-    public required bool Hidden { get; init; }
-    public required bool Access { get; init; }
+    public string Id { get; init; }
+    public string Name { get; init; }
+    public bool Hidden { get; init; }
+    public bool Access { get; init; }
 }

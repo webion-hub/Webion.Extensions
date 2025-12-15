@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Db.Migrations.Abstra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Db.Migrations", "src\db\migrations\Webion.Db.Migrations\Webion.Db.Migrations.csproj", "{1F02440F-D5A3-461E-BC65-C0C2193DABC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Extensions.Hosting", "src\Webion.Extensions.Hosting\Webion.Extensions.Hosting.csproj", "{239F1426-836D-44B9-833C-F41C474FC642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -134,6 +136,10 @@ Global
 		{1F02440F-D5A3-461E-BC65-C0C2193DABC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F02440F-D5A3-461E-BC65-C0C2193DABC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F02440F-D5A3-461E-BC65-C0C2193DABC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239F1426-836D-44B9-833C-F41C474FC642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239F1426-836D-44B9-833C-F41C474FC642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239F1426-836D-44B9-833C-F41C474FC642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239F1426-836D-44B9-833C-F41C474FC642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{612868D4-4234-41F4-B3C9-2E0D153C27BD} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
@@ -159,5 +165,6 @@ Global
 		{6CD35AF0-2FE9-4425-9D15-56E0A5AE674D} = {9CE2331A-7534-4B84-83D3-86DBCE9F8A76}
 		{5A101B62-8D4D-4534-82D1-F6B17738B253} = {9CE2331A-7534-4B84-83D3-86DBCE9F8A76}
 		{1F02440F-D5A3-461E-BC65-C0C2193DABC7} = {9CE2331A-7534-4B84-83D3-86DBCE9F8A76}
+		{239F1426-836D-44B9-833C-F41C474FC642} = {9DE6FA7E-CE7F-48E2-ADB8-C81404B98084}
 	EndGlobalSection
 EndGlobal
